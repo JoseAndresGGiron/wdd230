@@ -55,6 +55,9 @@ nav ul li a {
 .active {
     color: red;
 }
+ul{
+    padding-left: 2.15rem;
+}
 
 /* Tablet Views ******************************/
 @media (min-width: 37.5em) {
