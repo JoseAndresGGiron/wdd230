@@ -2,32 +2,35 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    
+    margin: 1.5rem;
 }
+
 body {
     font-family: 'Chelsea Market', cursive;
     font-size: 1.2vw;
     margin: 0 auto;
 }
+
 header,
 nav,
 main,
 footer {
+    margin: 0 auto;
     align-items: center;
     border-style: ridge;
 }
-.logos{
+
+.logos {
     max-width: 100%;
     max-height: 100%;
 }
-#top-logo{
+
+#top-logo {
     margin-top: 2rem;
     height: 100px;
     width: 100px;
 }
-#todaysDate{
-    border: 1px solid black;
-}
+
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box;
@@ -35,16 +38,25 @@ footer {
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+#todaysDate {
+    border: 1px solid black;
+}
+
 h1,
 p {
     margin: 0 2vw;
 }
-h1{
-    font-size: 3vh;
+
+h1 {
+    font-size: 2.2vh;
 }
+
 nav button {
     margin: .2rem 2vw;
     background-color: transparent;
@@ -60,7 +72,8 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 nav ul li a {
@@ -75,16 +88,50 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-nav ul li.active a{
-    background-color: rgba(0,0,0,0.2);
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
 }
-nav ul{ display:none;}
-nav ul.open{display: block;}
 
+nav ul {
+    display: none;
+}
 
-#hamburgerBtn span:nth-child(1){display: block;}
-#hamburgerBtn span:nth-child(2){display: none;}
+nav ul.open {
+    display: block;
+}
 
-#hamburgerBtn.open span:nth-child(1){display: none;}
-#hamburgerBtn.open span:nth-child(2){display: block;}
+/*This displays the hamburger icon and hides the X icon*/
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+/*This displays the X icon and hides the hamburger icon*/
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+
+}
+
+/*Main Style*/
+main{
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 2fr;
+    font-size: 4em;
+    align-content: center;
+}
+
+main section:nth-child(4){
+    /*Hide Join section on mobile viewport*/
+    display: none;
+}
+.mainContent{
+    border-style: ridge;
+}
