@@ -6,9 +6,11 @@ html {
 }
 
 body {
+    max-width: 900px;
     font-family: 'Chelsea Market', cursive;
     font-size: 1.2vw;
     margin: 0 auto;
+    padding: 10px;
 }
 
 header,
@@ -134,4 +136,6 @@ main section:nth-child(4){
 }
 .mainContent{
     border-style: ridge;
+    margin: 0.05em;
+    
 }
