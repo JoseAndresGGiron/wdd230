@@ -25,12 +25,12 @@ footer {
 .logos {
     max-width: 100%;
     max-height: 100%;
+    margin:15px;
 }
 
 #top-logo {
-    margin-top: 2rem;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -41,25 +41,33 @@ footer {
 }
 
 header {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 50px 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #6db784;
 }
+
 
 #todaysDate {
     border: 1px solid black;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 15px 0;
+    padding: 6px 0;
+    width: 88%;
+    height: 25px;
+    text-align: center;
 }
 
-h1,
-p {
-    margin: 0 2vw;
-}
+
 
 h1 {
-    font-size: 2.2vh;
+    font-size: 2.9vh;
 }
 
-nav button {
+button {
     margin: .2rem 2vw;
     background-color: transparent;
     border: none;
@@ -69,6 +77,8 @@ nav button {
 
 nav {
     background-color: rgb(231, 191, 191);
+    grid-column: 1/5;
+    width: 100%;
 }
 
 nav ul {
@@ -76,6 +86,7 @@ nav ul {
     padding: 0;
     margin: 0 auto;
     overflow: hidden;
+    width: 100%;
 }
 
 nav ul li a {
@@ -84,6 +95,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     border-top: 1px solid rgba(0, 0, 0, 5);
+    text-align: center;
 }
 
 nav ul li a:hover {
@@ -123,19 +135,40 @@ nav ul.open {
 }
 
 /*Main Style*/
-main{
+main {
     display: grid;
-    grid-auto-rows: 1fr 1fr 1fr 1fr 2fr;
-    font-size: 4em;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    font-size: 1em;
     align-content: center;
 }
 
-main section:nth-child(4){
+main section:nth-child(4) {
     /*Hide Join section on mobile viewport*/
     display: none;
 }
-.mainContent{
+
+.mainContent {
     border-style: ridge;
-    margin: 0.05em;
-    
+    margin:7px;
+
+}
+.mainContent#event{
+    grid-row: 2;
+}
+.mainContent#weather{
+    grid-row: 3;
+}
+.mainContent#spotlights{
+    grid-row: 5;
+}
+
+/*Footer Style*/
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#bottom-logo{
+    height: 130px;
+    width: 130px;
 }
