@@ -1,8 +1,8 @@
 
 body {
-    max-width: 900px;
+    max-width: 1280px;
     font-family: 'Chelsea Market', cursive;
-    font-size: 1.2vw;
+    font-size: 16px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -20,6 +20,7 @@ footer {
     max-width: 100%;
     max-height: 100%;
     margin:15px;
+    border-radius: 20%;
 }
 
 #top-logo {
@@ -33,33 +34,41 @@ footer {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+header, footer{
+    background-color: #1b4d89;
+    color: #fff;
+    box-shadow: 0 0 5px #333;
+}
 header {
     display: grid;
-    grid-template-rows: 70px 50px 1fr;
     align-items: center;
     justify-items: center;
-    background-color: #6db784;
 }
 #top-heading{
     justify-self: start;
 }
 
 #todaysDate {
-    border: 1px solid black;
+    border: 1px solid rgb(194, 201, 175);
+    background-color: #ffffff;
+    color: #2d334a;
     grid-column: 1/5;
     grid-row: 2/3;
     margin: 15px 0;
     padding: 6px 0;
     width: 90%;
-    height: 25px;
     text-align: center;
 }
-
-
-
+p{
+    padding: .5rem;
+    font-family: 'Libre Baskerville', serif;
+}
 h1 {
-    font-size: 2.9vh;
+    font-size: 2rem;
+    font-family: 'Arvo', serif;
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 button {
@@ -67,12 +76,12 @@ button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: #555;
+    color: #bae8e8;
     justify-self:center;
 }
 
 nav {
-    background-color: rgb(231, 191, 191);
+    background-color: #1b4d89;
     grid-column: 1/5;
     width: 100%;
 }
@@ -89,7 +98,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #333;
+    color: #fffffe;
     border-top: 1px solid rgba(0, 0, 0, 5);
     text-align: center;
 }
@@ -143,6 +152,9 @@ main section:nth-child(4) {
     /*Hide Join section on mobile viewport*/
     display: none;
 }
+.mainContent#spotlight3{
+    display: none;
+}
 
 .mainContent {
     border-style: ridge;
@@ -165,8 +177,15 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 1rem;
 }
 #bottom-logo{
     height: 130px;
     width: 130px;
+}
+footer a{
+    color: antiquewhite;
+}
+#p-footer{
+    border-top: 1px solid rgb(255, 255, 255);
 }
