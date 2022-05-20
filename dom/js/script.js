@@ -8,6 +8,7 @@ button.addEventListener('click', () => {
 
   //Inside the function body, start off by storing the current value of the input element in a variable.
   const myItem = input.value;
+  //Makes sure the input is not blank
   if (myItem != "") {
     //Next, empty the input element by setting its value to an empty string — ''
     input.value = '';
