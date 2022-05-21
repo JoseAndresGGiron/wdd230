@@ -7,9 +7,11 @@
         height: 40%;
     }
     main{
+        display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(5, 1fr);
     }
+    
     .mainContent#hero{
         grid-column: 1/5;
     }
@@ -36,6 +38,9 @@
     .mainContent#weather{
         grid-column: 4/5;
         grid-row: 5;
+    }
+    .mainContent#join{
+        grid-column: 1/5;
     }
     /*Footer Style*/
     footer{

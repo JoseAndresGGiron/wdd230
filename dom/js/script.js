@@ -36,7 +36,7 @@ button.addEventListener('click', () => {
 
     //Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
     input.focus();
-  } else{
+  } else {
     alert("Please enter a valid chapter!")
   }
 

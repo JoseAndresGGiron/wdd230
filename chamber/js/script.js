@@ -1,4 +1,4 @@
-let daynames=[
+let daynames = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -33,8 +33,15 @@ document.getElementById("lstmoddate").textContent = document.lastModified;
 document.getElementById("currentYear").textContent = year;
 document.getElementById("todaysDate").textContent = fulldate
 
+//This shows the banner
+let z = new Date().getDay();
 
-function toggleMenu(){
+const banner = document.getElementById("banner");
+if (z === 1 || z === 2) {
+    banner.style.display = "block";
+}
+
+function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
 }

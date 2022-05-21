@@ -6,7 +6,14 @@ body {
     margin: 0 auto;
     padding: 10px;
 }
-
+#banner {
+	display: none;
+	margin: 0 auto;
+	border: 1px solid #bbb;
+	background-color: #f9e45b;
+	padding: 1rem;
+	text-align: center;
+}
 header,
 nav,
 main,
@@ -154,13 +161,44 @@ nav ul.open {
 
 /*Main Style*/
 main {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
     font-size: 1em;
     align-content: center;
     margin-top: 10px;
 }
-
+    /*Ovelay Hero*/
+.mainContent#hero{
+    position: relative;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+.hero-text{
+    position: absolute;
+    top: 2px;
+    left: 50px;
+}
+.hero-text h2{
+    color: #fffffe;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.hero-link{
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    background:#6db784;
+	border: 1px solid #000;
+    border-radius: 12%;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+	opacity: 0.9;
+}
+.hero-link a{
+    color: #000;
+    font-size: 1.2em;
+}
 main section:nth-child(4) {
     /*Hide Join section on mobile viewport*/
     display: none;
@@ -172,17 +210,10 @@ main section:nth-child(4) {
 .mainContent {
     border-style: ridge;
     margin:7px;
+    text-align: center;
+    
+}
 
-}
-.mainContent#event{
-    grid-row: 2;
-}
-.mainContent#weather{
-    grid-row: 3;
-}
-.mainContent#spotlights{
-    grid-row: 5;
-}
 
 /*Footer Style*/
 footer{
