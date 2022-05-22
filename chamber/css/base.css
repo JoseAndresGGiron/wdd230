@@ -169,6 +169,35 @@ main {
 .mainContent#hero{
     position: relative;
 }
+.mainContent#weather{
+    display: grid;
+}
+.mainContent#weather h3{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.mainContent#weather picture{
+    grid-row: 2;
+}
+.mainContent#weather p{
+    margin: 0;
+}
+#degree{
+    align-self: center;
+    font-size: 2.5vw;
+    margin-right: 7px;
+}
+#weather-status{
+    grid-row: 3;
+    grid-column: 1/3;
+    text-align: right;
+    margin: 0 7px;
+    margin-bottom: 4px;
+}
+#weather-details{
+    grid-row: 4;
+    grid-column: 1/3;
+}
 .hero-img{
     width: 100%;
     height: 100%;
