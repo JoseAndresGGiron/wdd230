@@ -8,10 +8,13 @@
     }
     main{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(5, 1fr);
+        /*grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5, 1fr);*/
+        justify-items: stretch;
     }
-    
+    .mainContent{
+        height: fit-content;
+    }
     .mainContent#hero{
         grid-column: 1/5;
     }
@@ -25,6 +28,7 @@
         justify-content: center;
         grid-column: 1/5;
         grid-row: 3;
+        height: fit-content;
     }
     main section:nth-child(4) {
         /*Unhide Join section on mobile viewport*/
