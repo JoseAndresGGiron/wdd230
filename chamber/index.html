@@ -97,7 +97,10 @@
     <main>
         <section class="mainContent" id="hero">
             <picture>
-                <img class="hero-img" src="images/antiguate.jpg" alt="Antigua Guatemala">
+                <source media="(max-width: 559px)" srcset="images/small.jpg">
+                <source media="(max-width: 1027px)" srcset="images/medium.jpg">
+                <img class="hero-img" src="images/large.jpg" alt="Job Interview">
+                <!--<img class="hero-img" src="images/antiguate.jpg" alt="Antigua Guatemala">-->
             </picture>
             <div class="hero-text">
                 <h2>Welcome to Point of The Mayans</h2>
@@ -117,11 +120,11 @@
             <picture>
                 <img src="images/weather.png" alt="Weather icon">
             </picture>
-            <h4 id="degree">33°C</h4>
+            <h4 id="degree"><span id="t">33</span>°F</h4>
             <h4 id="weather-status">Party Cloudy</h4>
             <div id="weather-details">
-                <p>Wind Speed: 2.5km/h</p>
-                <p>Wind Chill: N/A</p>
+                <p>Wind Speed: <span id="s">4</span> mph</p>
+                <p>Wind Chill: <span id="w"></span></p>
             </div>
             
         </section>
@@ -189,6 +192,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/windhill.js"></script>
 </body>
 
 </html>
