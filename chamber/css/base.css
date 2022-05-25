@@ -22,14 +22,15 @@ footer {
     align-items: center;
     border-style: ridge;
 }
-
 .logos {
     max-width: 100%;
     max-height: 100%;
-    margin:15px;
     border-radius: 20%;
-}
 
+}
+header div#top-logo img.logos#top{
+    margin: 15px;
+}
 #top-logo {
     height: 90px;
     width: 90px;
@@ -242,18 +243,25 @@ main section:nth-child(4) {
     text-align: center;
     
 }
-
+main p{
+    margin: 0;
+}
+main h3, h4{
+    margin: 4px 0 2px;
+}
 
 /*Footer Style*/
 footer{
     margin-top: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 #bottom-logo{
-    height: 130px;
+    height: fit-content;
     width: 130px;
 }
 footer a{
@@ -261,4 +269,7 @@ footer a{
 }
 #p-footer{
     border-top: 1px solid rgb(255, 255, 255);
+}
+footer p{
+    margin: 0;
 }

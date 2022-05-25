@@ -33,7 +33,7 @@ document.getElementById("lstmoddate").textContent = document.lastModified;
 document.getElementById("currentYear").textContent = year;
 document.getElementById("todaysDate").textContent = fulldate
 
-//This shows the banner
+//This shows the banner on Monday and Tuesday
 let z = new Date().getDay();
 
 const banner = document.getElementById("banner");
@@ -41,6 +41,7 @@ if (z === 1 || z === 2) {
     banner.style.display = "block";
 }
 
+//Dynamic Nav
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -48,3 +49,6 @@ function toggleMenu() {
 
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
+
+
+

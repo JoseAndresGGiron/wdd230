@@ -1,3 +1,4 @@
+/* 35em is also 560px (if basefont is 16px) */
 @media (min-width: 45em) {
     h1{
         font-size: 1.5rem;
@@ -63,5 +64,8 @@
     #main-footer{
         grid-row: 2;
         grid-column: 1/4;
+    }
+    #bottom-logo{
+        margin-bottom: 10px;
     }
 }
