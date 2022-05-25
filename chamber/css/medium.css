@@ -36,6 +36,10 @@
         display: block;
         grid-column: 1/5;
     }
+    /*Set the height of each element of main to 92%*/
+    .mainContent{
+        height: 92%;
+    }
     .mainContent#event{
         grid-column: 1/4;
         grid-row: 5;
