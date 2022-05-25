@@ -34,7 +34,7 @@
     main{
         max-width: 1200px;
         grid-template-columns: 1fr 3fr 1fr;
-        /*grid-template-rows: repeat(3, 1fr);*/
+        grid-template-rows: repeat(3, 1fr);
     }
     .mainContent#event{
         grid-column: 1;
