@@ -253,7 +253,9 @@ main p{
 main h3, h4{
     margin: 4px 0 2px;
 }
-
+.mainContent#spotlights{
+    width: 100%;
+}
 /*Footer Style*/
 footer{
     margin-top: 10px;
