@@ -13,7 +13,7 @@ h1 {
     font-size: 3em;
     margin:auto;
     text-align: center;
-    background-color: #a6d8f5;
+    
 }
 
 p {
@@ -21,8 +21,10 @@ p {
 }
 
 header {
+    display: flex;
     border: 1px solid;
     box-shadow: 5px 10px;
+    background-color: #a6d8f5;
 }
 
 footer {
@@ -48,11 +50,13 @@ footer p {
 }
 
 .guapo {
-    float: right;
+    float: left;
     max-width: 162px;
     max-height: 200px;
     bottom: 0;
     height: auto;
+    margin: 3px;
+    padding: 3px;
 }
 
 ul {
