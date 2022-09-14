@@ -11,7 +11,7 @@ main {
 h1 {
     font-family: 'Baloo Thambi 2', cursive;
     font-size: 3em;
-    margin: 0.67em 0;
+    margin:auto;
     text-align: center;
     background-color: #a6d8f5;
 }
@@ -20,13 +20,27 @@ p {
     font-family: 'Sura', serif;
 }
 
+header {
+    border: 1px solid;
+    box-shadow: 5px 10px;
+}
+
+footer {
+    border-radius: 25px;
+    max-height: auto;
+    box-shadow: 5px 10px;
+}
+
 footer {
     text-align: center;
     background-color: #a6d8f5;
     font-family: 'Sura', serif;
-    margin-top: 300px;
     font-size: 20px;
+}
 
+footer p {
+    padding-top: 0.5em;
+    margin: auto;
 }
 
 #wdd230 {
@@ -53,5 +67,5 @@ h2 {
 
 img {
     border-style: none;
-    
-  }
+
+}
