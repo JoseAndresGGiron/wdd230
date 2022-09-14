@@ -1,0 +1,57 @@
+body {
+    margin: auto;
+    max-width: 600px;
+
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 3em;
+    margin: 0.67em 0;
+    text-align: center;
+    background-color: #a6d8f5;
+}
+
+p {
+    font-family: 'Sura', serif;
+}
+
+footer {
+    text-align: center;
+    background-color: #a6d8f5;
+    font-family: 'Sura', serif;
+    margin-top: 300px;
+    font-size: 20px;
+
+}
+
+#wdd230 {
+    border-bottom: 3px solid grey;
+}
+
+.guapo {
+    float: right;
+    max-width: 162px;
+    max-height: 200px;
+    bottom: 0;
+    height: auto;
+}
+
+ul {
+    font-family: 'Sura', serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 2em;
+}
+
+img {
+    border-style: none;
+    
+  }
