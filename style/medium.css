@@ -1,6 +1,19 @@
 @media (min-width: 32.5em) {
-    .guapo{
-        float:right;
-        
+    .guapo {
+        float: right;
+
     }
+
+    h1 {
+        font-size: 3.1em;
+    }
+    h2{
+        font-size: 2em;
+    }
+
+    main {
+        text-align: left;
+    }
+    ul{
+        display: block;
 }

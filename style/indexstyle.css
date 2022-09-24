@@ -6,11 +6,12 @@ body {
 
 main {
     display: block;
+    text-align: center;
 }
 
 h1 {
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 3em;
+    font-size: 2em;
     margin:auto;
     text-align: center;
     
@@ -62,11 +63,13 @@ footer p {
 ul {
     font-family: 'Sura', serif;
     font-size: 18px;
+    display: inline-block;
+       
 }
 
 h2 {
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 img {
