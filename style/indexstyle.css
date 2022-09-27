@@ -30,7 +30,6 @@ header {
 
 footer {
     border-radius: 25px;
-    max-height: auto;
     box-shadow: 5px 10px;
 }
 
@@ -49,15 +48,15 @@ footer p {
 #wdd230 {
     border-bottom: 3px solid grey;
 }
-
+#img-container{
+    width: 168px;
+    height: 186.14px;
+    margin: 5px;
+    padding: 5px;
+}
 .guapo {
     float: left;
-    max-width: 162px;
-    max-height: 200px;
-    bottom: 0;
-    height: auto;
-    margin: 3px;
-    padding: 3px;
+    max-width: 100%;
 }
 
 ul {
