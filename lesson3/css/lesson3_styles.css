@@ -22,16 +22,27 @@ footer {
 }
 
 header {
-    margin: 1.5rem;
+    /*margin: 1.5rem;*/
     text-align: center;
+    background-color: #ffffff;
+    color: #1b4d89;
 }
-
+header,
+h1,
+h2 {
+    margin:0 ;
+    padding: 5px;
+}
+header h2{
+    color:#047692;
+    font-size: 1.7em;
+}
 main {
     padding: 1rem;
 }
 
 nav ul {
-    background-color: #6db784;
+    background-color: #1b4d89;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
@@ -41,7 +52,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
@@ -50,9 +61,12 @@ nav ul li a {
     border: 1px solid black;
 
 }
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 .active {
-    color: #ffffff;
+    color: #fff;
 }
 
 ul {
@@ -62,9 +76,10 @@ ul {
 /* Tablet Views ******************************/
 @media (min-width: 37.5em) {
     h1 {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
-
+    
+    }
     nav ul {
         display: flex;
     }
