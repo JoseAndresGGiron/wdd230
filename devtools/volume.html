@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Convert Celsius to Fahrenheit</title>
+
+<script>
+
+function quartsToliters() {
+// Get the quarts value from the input
+let text = document.getElementById('quartsInputBox').value;// Convert string to a number and assing the value to q
+let q = parseFloat(text);
+// Convert quarts to liters
+let l = q * 0.94635;
+//Display the volume in liters
+document.getlementById('litersDiv').innerHTML = l;
+}
+</script>
+</head>
+
+<body>
+Enter The Volume in Quarts: <input type="text" size=5 id="quartsInputBox">
+<button type="button" onclick="quartsToliters()">Convert</button>
+<br>The Volume in Liters is:<div id="litersDiv"></div>
+</body>
+</html>
