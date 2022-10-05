@@ -18,6 +18,10 @@ h2 {
     background-color: rgb(255, 208, 154);
     margin-top: 0%;
 }
+main h2 {
+    height: 77.28px;
+    padding: 20px;
+}
 body {
     margin: auto;
     max-width: 500px;
@@ -35,12 +39,14 @@ img {
     border-style: none;
     max-width: 80%;
     max-height: 80%;
-    margin-left: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
     align-items: center;
 }
-
+/*The following aligns the images in the center*/
+.design-img {
+    text-align: center;
+}
 p {
     font-family: 'Sura', serif;
     font-size: 1em;
