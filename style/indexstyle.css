@@ -56,7 +56,8 @@ footer p {
 }
 .guapo {
     float: left;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 ul {
