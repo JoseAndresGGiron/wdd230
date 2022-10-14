@@ -6,9 +6,9 @@
     button {
         display: none;
     }
-    header{
-        grid-template-rows: 2;
-    }
+    /*header{
+        grid-row: 2;
+    }*/
     nav{
         grid-column: 3;
         grid-row: 1;
