@@ -4,11 +4,18 @@
         font-size: 1.5rem;
     }
 
-    button {
+    nav button {
         width: 20%;
         height: 40%;
     }
-
+    #close {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+        cursor: pointer;
+        margin: 0;
+    }
     main {
         display: grid;
         grid-template-columns: repeat(4,1fr);
