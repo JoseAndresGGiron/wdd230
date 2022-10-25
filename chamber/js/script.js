@@ -40,6 +40,11 @@ const banner = document.getElementById("banner");
 if (z === 1 || z === 2) {
     banner.style.display = "block";
 }
+// close button
+const close = document.querySelector("#close");
+close.addEventListener("click", () => {
+    banner.style.display = "none";
+});
 
 //Dynamic Nav
 function toggleMenu() {
