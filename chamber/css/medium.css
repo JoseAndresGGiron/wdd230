@@ -1,4 +1,4 @@
-/* 35em is also 560px (if basefont is 16px) */
+/* 45em is also 720px (if basefont is 16px) - Jose Giron */
 @media (min-width: 45em) {
     h1 {
         font-size: 1.5rem;
@@ -16,7 +16,7 @@
         cursor: pointer;
         margin: 0;
     }
-    main {
+    #mainIndex {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         /*grid-template-rows: repeat(5, 1fr);*/
@@ -46,7 +46,7 @@
         height: fit-content;
     }
 
-    main section:nth-child(4) {
+    .mainContent#join {
         /*Unhide Join section on mobile viewport*/
         display: block;
         grid-column: 1/5;
