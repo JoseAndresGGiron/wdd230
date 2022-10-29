@@ -90,9 +90,9 @@ const firstVisit = `Welcome, this is your first visit!`
 const visits = `Welcome back! Your last visit was ${Math.round(daysBetweenVisits)} days ago.`
 
 if (lastVisit === 0) {
-    document.querySelector("#visits").textContent = firstVisit;
+    document.querySelector("#banner").textContent = firstVisit;
 } else {
-    document.querySelector("#visits").textContent = visits;
+    document.querySelector("#banner").textContent = visits;
 }
 localStorage.setItem('lastvisit', Date.now())
 
