@@ -24,6 +24,7 @@ main,
 footer {
     margin: 0 auto;
     align-items: center;
+    /*border-style: ridge;*/
 }
 .logos {
     max-width: 100%;
@@ -292,8 +293,11 @@ img[data-src] {
     filter: blur(0em);
     transition: filter 2s;
   }
+.imagesDiscover:hover {
+    box-shadow: 0 0 40px #08232b;
+}
 #discoverContainer{
-    
+    padding: 2px;
 }
 /*Discover Main Style*/
 #mainDiscover {
