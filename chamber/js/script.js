@@ -81,6 +81,7 @@ if('IntersectionObserver' in window) {
         loadImages(img);
     });
 }
+
 //Last visit
 const lastVisit = Number(localStorage.getItem('banner'));
 const currentVisit = Date.now() - lastVisit;
