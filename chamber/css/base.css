@@ -24,7 +24,6 @@ main,
 footer {
     margin: 0 auto;
     align-items: center;
-    border-style: ridge;
 }
 .logos {
     max-width: 100%;
