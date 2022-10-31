@@ -83,7 +83,7 @@ if('IntersectionObserver' in window) {
 }
 
 //Last visit
-const lastVisit = Number(localStorage.getItem('banner'));
+const lastVisit = Number(localStorage.getItem('lastvisit'));
 const currentVisit = Date.now() - lastVisit;
 const daysBetweenVisits = currentVisit / (1000 * 60 * 60 * 24);
 const firstVisit = `Welcome, this is your first visit!`
