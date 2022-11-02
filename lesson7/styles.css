@@ -1,23 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#104c5e, #cee5fc, #104c5e);
+}
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(#104c5e, #cee5fc,#104c5e);
-}
 picture {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
+
 img[data-src] {
-    filter: blur(.5em);
-  }
-  
-img {
-    filter: blur(0em);
-    transition: filter 2s;
-  }
-h1{
-    color: rgb(255, 255, 255);
+  filter: blur(.5em);
 }
-]
+
+img {
+  filter: blur(0em);
+  transition: filter 2s;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+footer{
+  height: 250px;
+}
