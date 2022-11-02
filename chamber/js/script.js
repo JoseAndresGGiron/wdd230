@@ -91,7 +91,7 @@ const visits = `Welcome back! Your last visit was ${Math.round(daysBetweenVisits
 
 if (lastVisit === 0) {
     document.querySelector("#banner").textContent = firstVisit;
-} else {
+}else {
     document.querySelector("#banner").textContent = visits;
 }
 localStorage.setItem('lastvisit', Date.now())
