@@ -230,8 +230,9 @@ nav ul.open {
 
 .hero-img {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0;
+    object-fit: cover;
 }
 
 .hero-text {
