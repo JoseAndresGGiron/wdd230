@@ -66,6 +66,10 @@ ul {
     display: inline-block;
        
 }
+li {
+    padding: calc(8px + 0vw);
+    text-align: left;
+}
 
 h2 {
     font-family: 'Baloo Thambi 2', cursive;
