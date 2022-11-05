@@ -1,73 +1,100 @@
 /*64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
-    h2{
+    h2 {
         font-size: 1.2rem;
     }
+
     header button {
         display: none;
     }
-    
+
     /*header{
         grid-row: 2;
     }*/
-    nav{
+    nav {
         grid-column: 3;
         grid-row: 1;
         width: auto;
         border: none;
     }
+
     nav ul {
         display: flex;
-        justify-content:center;
-        
+        justify-content: center;
+
     }
+
     nav ul li a {
         padding: .5rem 1rem;
         border: none;
     }
+
     nav ul li a:hover {
         border-radius: 20%;
     }
-    
+
     nav ul li.active a {
         border-radius: 20%;
     }
-    #mainIndex{
+
+    #mainIndex {
         max-width: 1200px;
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
-    .mainContent#event{
+
+    .mainContent#event {
         grid-column: 1;
         grid-row: 1;
     }
-    .mainContent#hero{
+
+    .mainContent#hero {
         grid-column: 2;
         grid-row: 1/3;
         height: 98%;
     }
-    .mainContent#spotlight3{
+
+    .mainContent#spotlight3 {
         display: block;
     }
-    .mainContent#spotlights{
+
+    .mainContent#spotlights {
         display: flex;
         flex-direction: column;
         grid-column: 3;
         grid-row: 1/4;
     }
-    .mainContent#weather{
+
+    .mainContent#weather {
         grid-column: 1;
         grid-row: 2;
     }
-    .mainContent#join{
+
+    .mainContent#join {
         grid-column: 1;
         grid-row: 3;
     }
-    .mainContent#NewRelease{
+
+    .mainContent#NewRelease {
         grid-column: 2;
         grid-row: 3;
     }
+
+    /*Join Page Style*/
+    .join-button {
+        font-size: 1.2rem;
+    }
     
+    .membershipDescription {
+        display: block;
+    }
+
+    #contactBody,
+    #joinBody {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 }
 
 /* end large */

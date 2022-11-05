@@ -347,3 +347,299 @@ img[data-src] {
     margin-top: 10px;
     text-align: center;
 }
+
+/*Join Page Style*/
+#joinTitle{
+    text-align: center;
+}
+#joinForm,
+#contactForm {
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #08232B;
+    border-radius: 10px;
+}
+
+form fieldset {
+    border: none;
+    border-top: 1px solid #08232B;
+}
+
+form legend {
+    color: #08232B;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0 .5rem;
+    text-align: left;
+}
+
+form label.formInfo {
+    display: block;
+    color: #08232B;
+    text-align: left;
+    padding: .5rem 1rem 1.5rem 1rem;
+    max-width: 30rem;
+}
+
+div.formInfo {
+    padding: .5rem 1.5rem 1rem 1.5rem;
+    max-width: 30rem;
+
+}
+
+.businessInfo {
+    display: block;
+    text-align: left;
+    padding: 1.5rem 1rem;
+    max-width: 30rem;
+}
+
+.MembershipQuestion {
+    display: block;
+    text-align: left;
+    padding: 0 1rem;
+    max-width: 30rem;
+}
+
+
+
+.submitBtn {
+    background-color: #08232B;
+    color: #E8F3FE;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.submitBtnContainer {
+    display: block;
+    padding: 0 1rem;
+    max-width: 30rem;
+}
+
+form label.formInfo input,
+form label.formInfo select,
+.textbox {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #08232B;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 30rem;
+    background-color: #F6FAFE;
+    text-align: left;
+}
+
+form label.formMembership {
+    display: flex;
+    padding-top: 1rem;
+    color: #08232B;
+    text-align: left;
+    align-items: center;
+}
+
+form label.mem1 {
+    padding: 0 0 1rem 1rem;
+}
+
+
+form label.formInfo input:required:invalid {
+    border-left: 6px solid red;
+}
+
+form label.formInfo input:required:valid {
+    border-left: 6px solid green;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 5%;
+    height: 1.5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.membershipBox {
+    border: solid 1px #10354B;
+    margin: 0 1.5rem 1rem 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 98.5%;
+}
+
+.membershipBox .placeholder-title {
+    border-radius: 10px 10px 0 0;
+}
+
+.membershipPlans {
+    margin: .5rem;
+    padding: .5rem .5rem 1rem .5rem;
+    border-bottom: 1px solid #08232B;
+}
+
+.membershipFee {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.membershipDescription {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.benefits {
+    padding-left: 2rem;
+}
+
+.perks {
+    text-align: left;
+    margin-top: 1rem;
+    color: #08232B;
+}
+
+
+#viewButtons {
+    margin: 1rem 2rem 0 3rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.viewButtons {
+    margin: .5rem;
+    margin-bottom: 0;
+    background-color: #F6FAFE;
+    border: 1.5px solid #08232B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.buttonsSpace {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCards-Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.infoCards-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.infoCards-Grid section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #08232B;
+    background-color: #F6FAFE;
+}
+
+.infoCards-Grid section h2 {
+    color: #08232B;
+    border-bottom: 1px solid #08232B;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 0.1rem;
+}
+
+.infoCards-Grid section p {
+    padding-top: .5rem;
+    font-weight: 600;
+}
+
+.infoCards-Grid section p a {
+    text-decoration: none;
+    color: #10354B;
+    padding-bottom: 0.05rem;
+    border-bottom: 1px solid #08232B;
+}
+
+
+.infoCards-Grid img {
+    max-width: 25%;
+    border-radius: 10px;
+}
+
+.infoCards-Grid section:hover {
+    box-shadow: 0 0 10px #10354B;
+    transition: transform .1s;
+    transform: rotate(.3deg);
+}
+
+
+.infoCards-list section {
+    margin: 0;
+    border: none;
+}
+
+.infoCards-list section:nth-child(even) {
+    background-color: #E8F3FE;
+}
+
+.infoCards-list section h2 {
+    border-bottom: none;
+    margin: 0;
+}
+
+.infoCards-list section p {
+    padding-bottom: 0;
+    margin: auto 1rem;
+}
+
+.infoCards-list img,
+.email,
+.membership {
+    display: none;
+}
+
+.visitSections {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+}
+
+.placeholder-title {
+    background-color: #1b4d89;
+    color: #fff;
+    padding: .5rem;
+    margin: 0;
+}
+
+.visitSections .placeholder-title {
+    border-radius: 10px 10px 0 0;
+}
+
+.visitSections .section-text p {
+    margin-top: .7rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#contactChamber {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.staffContact {
+    padding: .5rem 0;
+    margin: .5rem;
+    line-height: 1.5rem;
+}
+
+.position {
+    font-style: italic;
+}
+
+
+#thankyouMain {
+    margin-bottom: 3rem;
+    text-align: center;
+}

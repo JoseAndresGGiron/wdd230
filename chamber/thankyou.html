@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Point of The Mayans Chamber">
+    <meta name="description" content="Thank You Page">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point of The Mayans | Home Page</title>
@@ -25,12 +25,13 @@
 </head>
 
 <body>
-    <!--Ojo-->
-    <div id="banner">
-        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    <!--last visit
+    <div id="banner" style="display: block;">
+        
         <button id="close">❌</button>
     </div>
-    
+    -->
+
     <!-- HEADER HERE -->
     <header>
         <div id="top-logo">
@@ -42,7 +43,7 @@
         </div>
 
         <div id="social">
-            
+
             <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32"
                 width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -59,7 +60,7 @@
                 <g />
                 <g />
             </svg>
-            
+
             <svg enable-background="new 0 0 32 32" height="32px" id="Layer_2" version="1.0" viewBox="0 0 32 32"
                 width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -85,91 +86,20 @@
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <nav>
             <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <p id="todaysDate"></p>
     </header>
     <!-- CONTENT HERE -->
-    <main id="mainIndex">
-        <section class="mainContent" id="hero">
-            <picture>
-                <source media="(max-width: 559px)" srcset="images/small.jpg">
-                <source media="(max-width: 1027px)" srcset="images/medium.jpg">
-                <img class="hero-img" src="images/large.jpg" alt="Job Interview">
-                <!--<img class="hero-img" src="images/antiguate.jpg" alt="Antigua Guatemala">-->
-            </picture>
-            <div class="hero-text">
-                <h2>Welcome to Point of The Mayans</h2>
-            </div>
-            <div class="hero-link">
-                <a href="join.html">Join the Chamber</a>
-            </div>
-        </section>
-        <section class="mainContent" id="event">
-            <!--Ojo--><h3>Ribon Cutting</h3>
-            <h4>💎 The Diamond Shack</h4>
-            <p>Join us for the grand opening of The Diamon Shack, Thursday at 1:00 p.m. <a href="#" target="_blank">more
-                    info...</a></p>
-        </section>
-        <section class="mainContent" id="weather">
-            <h3>Weather</h3>
-            <picture>
-                <img src="images/weather.png" alt="Weather icon">
-            </picture>
-            <h4 id="degree"><span id="t">33</span>°F</h4>
-            <h4 id="weather-status">Party Cloudy</h4>
-            <div id="weather-details">
-                <p>Wind Speed: <span id="s">4</span> mph</p>
-                <p>Wind Chill: <span id="w"></span></p>
-            </div>
-            
-        </section>
-        <section class="mainContent" id="NewRelease">
-            <h3>News Release</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aperiam laboriosam nisi vero
-                eligendi nulla pariatur praesentium animi voluptatem magnam, soluta, porro doloremque fuga deserunt
-                repellendus velit alias obcaecati aspernatur.</p>
-        </section>
-        <section class="mainContent" id="spotlights">
-            <div class="mainContent">
-                <h3>Thankful Transport</h3>
-                <picture>
-                    <img src="images/truck.png" alt="truck image">
-                </picture>
-                <h4>¨We get it there for you!</h4>
-                <p>hello@thankfultransport.com <br>+999-999-999 Website</p>
-
-            </div>
-            <div class="mainContent">
-                <h3>Code Primera</h3>
-                <picture>
-                    <img src="images/pencils.png" alt="pencils image">
-                </picture>
-                <h4>An after school coding instructional program.</h4>
-                <p>contact@codeprimera.com <br>+999-999-999 | Website</p>
-
-            </div>
-            <div class="mainContent" id="spotlight3">
-                <h3>Build A Treefort</h3>
-                <picture>
-                    <img src="images/treefort.png" alt="treefort image">
-                </picture>
-                <h4>Over 1000 Plans!</h4>
-                <p>builda@treefort.com <br>+999-999-999 Website</p>
-
-            </div>
-        </section>
-        <section class="mainContent" id="join">
-            <a id="join-us" href="join.html">Join Us!</a>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-        </section>
-        
-        
+    <main id="thankyouMain">
+        <h1 id="thankyouTitle">Thank you!</h1>
+        <p>We have received your information.</p>
+        <p>We will get back to you within 2-3 business days</p>
     </main>
     <!-- FOOTER HERE -->
     <footer>
@@ -191,10 +121,9 @@
                     Learning</a> | Last Updated: <span id="lstmoddate"></span></p>
             <br>
         </div>
-    <!-- BY Jose Giron -->
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/windhill.js"></script>
+
 </body>
 
 </html>

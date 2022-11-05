@@ -8,6 +8,7 @@
         width: 20%;
         height: 40%;
     }
+
     #close {
         background-color: transparent;
         border: none;
@@ -16,9 +17,10 @@
         cursor: pointer;
         margin: 0;
     }
+
     #mainIndex {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         /*grid-template-rows: repeat(5, 1fr);*/
         justify-items: stretch;
     }
@@ -61,7 +63,7 @@
         grid-column: 4/5;
         grid-row: 5;
         width: auto;
-        
+
     }
 
     .mainContent#join {
@@ -100,40 +102,115 @@
         display: grid;
         grid-gap: 1em;
     }
-    .contentContainer{
+
+    .contentContainer {
         display: grid;
         grid-template-columns: 1.25fr 1fr;
         align-items: center;
     }
-    .imagesDiscover{
+
+    .imagesDiscover {
         max-width: 100%;
-        
+
     }
-    #picDisc{
+
+    #picDisc {
         max-width: 700px;
     }
-    
-    .contentContainer#guateCity{
+
+    .contentContainer#guateCity {
         grid-column: 1/3;
         grid-row: 1;
     }
-    .contentContainer#tikal{
+
+    .contentContainer#tikal {
         grid-column: 1/3;
         grid-row: 2;
     }
-    .contentContainer#atitlan{
+
+    .contentContainer#atitlan {
         grid-column: 1/3;
         grid-row: 3;
     }
-    .contentContainer#semuc{
+
+    .contentContainer#semuc {
         grid-column: 1/3;
         grid-row: 4;
     }
-    .contentContainer#volcanos{
+
+    .contentContainer#volcanos {
         grid-column: 1/3;
         grid-row: 5;
     }
-    .contentContainer p{
+
+    .contentContainer p {
         text-align: left;
     }
+
+    /*Join Page Style*/
+
+    .join-button {
+        color: #F6FAFE;
+        background-color: #08232B;
+        cursor: pointer;
+        padding: .8rem;
+        border-radius: .5rem;
+        margin-top: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .membershipDescription {
+        display: none;
+    }
+
+    img[data-src] {
+        filter: blur(.5em);
+    }
+
+    img {
+        filter: blur(0em);
+        transition: filter 2s;
+    }
+
+    .discoverSections {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        justify-content: center;
+    }
+
+    .discoverPictures {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .discoverInfo {
+        margin: 1rem 2rem 2rem 1rem;
+    }
+
+    .discoverPictures:hover {
+        box-shadow: 0 0 40px #08232B;
+    }
+
+    .infoCards-list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    #contactBody,
+    #joinBody {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    #visitUs {
+        grid-column: 2/3;
+    }
+
+    #contactForm,
+    #joinForm {
+        grid-row: 1;
+        margin: 0 0 1rem 2rem;
+    }
 }
+
