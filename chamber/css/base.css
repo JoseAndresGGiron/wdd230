@@ -94,6 +94,7 @@ header {
 p {
     padding: .5rem;
     font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
 }
 
 h1 {
@@ -105,7 +106,22 @@ h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
 }
-
+h3{
+    font-family: 'Josefin Sans', sans-serif;;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+a#join-us {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: #1b4d89;
+}
 button {
     margin: .2rem 2vw;
     background-color: transparent;
