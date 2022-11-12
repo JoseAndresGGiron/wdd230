@@ -582,8 +582,7 @@ input[type=radio] {
 
 
 .infoCards-Grid img {
-    max-width: 25%;
-    border-radius: 10px;
+    max-width: 45%;
 }
 
 .infoCards-Grid section:hover {
@@ -723,10 +722,6 @@ div#viewButtons {
 }
 
 
-.infoCards-Grid img {
-    max-width: 25%;
-    border-radius: 10px;
-}
 .infoCards-Grid section:hover {
     box-shadow: 0 0 10px #10354B;
     transition: transform .1s;
