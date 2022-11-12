@@ -696,13 +696,13 @@ input[type=radio] {
 .infoCards-Grid section {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid var(--color1);
+    border: 1px solid #08232B;
     background-color: var(--color2);
 }
 
 .infoCards-Grid section h2 {
-    color: var(--color1);
-    border-bottom: 1px solid var(--color1);
+    color: #08232B;
+    border-bottom: 1px solid #08232B;
     font-size: 1.2rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -716,9 +716,9 @@ input[type=radio] {
 
 .infoCards-Grid section p a {
     text-decoration: none;
-    color: var(--color6);
+    color: #10354B;
     padding-bottom: 0.05rem;
-    border-bottom: 1px solid var(--color1);
+    border-bottom: 1px solid #08232B;
 }
 
 
@@ -739,7 +739,7 @@ input[type=radio] {
 }
 
 .infoCards-list section:nth-child(even) {
-    background-color: var(--color5);
+    background-color: #E8F3FE;;
 }
 
 .infoCards-list section h2 {
