@@ -660,3 +660,97 @@ input[type=radio] {
     margin-bottom: 3rem;
     text-align: center;
 }
+
+/*Directory*/
+#viewButtons {
+    margin: 1rem 2rem 0 3rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.viewButtons {
+    margin: .5rem;
+    margin-bottom: 0;
+    background-color: #F6FAFE;
+    border: 1.5px solid #08232B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .2rem;
+}
+.buttonsSpace {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCards-Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.infoCards-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.infoCards-Grid section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color1);
+    background-color: var(--color2);
+}
+
+.infoCards-Grid section h2 {
+    color: var(--color1);
+    border-bottom: 1px solid var(--color1);
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 0.1rem;
+}
+
+.infoCards-Grid section p {
+    padding-top: .5rem;
+    font-weight: 600;
+}
+
+.infoCards-Grid section p a {
+    text-decoration: none;
+    color: var(--color6);
+    padding-bottom: 0.05rem;
+    border-bottom: 1px solid var(--color1);
+}
+
+
+.infoCards-Grid img {
+    max-width: 25%;
+    border-radius: 10px;
+}
+.infoCards-Grid section:hover {
+    box-shadow: 0 0 10px #10354B;
+    transition: transform .1s;
+    transform: rotate(.3deg);
+}
+
+
+.infoCards-list section {
+    margin: 0;
+    border: none;
+}
+
+.infoCards-list section:nth-child(even) {
+    background-color: var(--color5);
+}
+
+.infoCards-list section h2 {
+    border-bottom: none;
+    margin: 0;
+}
+.infoCards-list section p {
+    padding-bottom: 0;
+    margin: auto 1rem;
+}
+
+.infoCards-list img, .email, .membership {
+    display: none;
+}
