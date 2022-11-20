@@ -40,9 +40,12 @@
     #mainIndex {
         max-width: 1200px;
         grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        /*grid-template-rows: repeat(3, 1fr);*/
     }
 
+    .mainContent:not(section#hero) {
+        padding: unset;
+    }
     .mainContent#event {
         grid-column: 1;
         grid-row: 1;

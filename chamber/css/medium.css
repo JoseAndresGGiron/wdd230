@@ -50,7 +50,7 @@
 
     .mainContent#join {
         /*Unhide Join section on mobile viewport*/
-        display: block;
+        display: flex;
         grid-column: 1/5;
     }
 

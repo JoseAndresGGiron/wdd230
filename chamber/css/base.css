@@ -206,6 +206,31 @@ nav ul.open {
     position: relative;
 }
 
+/*Weather Section*/
+.mainContent#weather {
+    width: 60%;
+}
+
+.mainContent:not(section#hero) {
+    padding: 1vw 0;
+}
+
+#weatherFigure {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+}
+#sourced {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+/*Section General Sectings*/
+body section:not(section#hero) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/*                                 Before Weather API
 .mainContent#weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -220,7 +245,7 @@ nav ul.open {
 .mainContent#weather picture {
     grid-row: 2;
 }
-
+*/
 .mainContent#weather p {
     margin: 0;
 }
@@ -484,7 +509,7 @@ input[type=radio] {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: flex-end;
     height: 98.5%;
 }
 
@@ -647,7 +672,7 @@ input[type=radio] {
 .staffContact {
     padding: .5rem 0;
     margin: .5rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 
 .position {
