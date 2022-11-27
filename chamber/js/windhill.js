@@ -1,5 +1,5 @@
-let t = parseFloat(document.querySelector("#t").textContent);
-let s = parseFloat(document.querySelector("#s").textContent);
+let t = parseFloat(document.querySelector("#t"));
+let s = parseFloat(document.querySelector("#s"));
 let windchill = "";
 
 /*
