@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Directory Page">
+    <meta name="description" content="Contact Page">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point of The Mayans | Home Page</title>
@@ -87,25 +87,66 @@
             <ul id="primaryNav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li class="active"><a href="#">Directory</a></li>
+                <li ><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="#">Contact</a></li>
             </ul>
         </nav>
         <p id="todaysDate"></p>
     </header>
     <!-- CONTENT HERE -->
-    <main id="mainDirectory">
-        <h1>Business Directory</h1>
-        <div id="viewButtons">
-            <Section class="buttonsSpace"><button id="grid" class="viewButtons"><img src="images/gridViewSmall.png"
-                        alt="Grid View Button"></button></Section>
-            <Section class="buttonsSpace"><button id="list" class="viewButtons"><img src="images/listViewSmall.png"
-                        alt="List View Button"></button></Section>
+    <main id="mainJoin">
+        <div id="contactTitle">
+            <h1>Contact the Chamber</h1>
         </div>
-        <section id="directoryContainer">
-            <div class="infoCards-Grid"></div>
-        </section>
+        <div id="contactBody">
+            <div id="visitAndPoints">
+                <div class="placeholder visitSections">
+                    <h2 class="placeholder-title">Visit Us 🏛</h2>
+                    <section class="section-text">
+                        <p id="contactChamber">Point of the Mayans Chamber of Commerce</p>
+                        <p class="companyPhone">15 Avenida 5, WTC Building, 11th floor<br>Guatemala City 01013</p>
+                        <p>Monday – Thursday: 9:00 a.m. to 4:30 p.m.</p>
+                        <p>Friday: By Appointment Only</p>
+                    </section>
+                </div>
+                <div class="placeholder visitSections">
+                    <h2 class="placeholder-title">Points of Contact 📞</h2>
+                    <section class="staffContact">
+                        <strong><p>Jose Giron</p></strong>
+                        <p class="position">President & CEO</p>
+                        <p>(+502) 2235-0203, ext. 121</p>
+                    </section>
+                    <section class="staffContact">
+                        <strong><p>Scarlett Ramazzini</p></strong>
+                        <p class="position">Director of Marketing & Membership</p>
+                        <p>(+502) 2325-1030, ext. 321</p>
+                    </section>
+                    <section class="staffContact">
+                        <strong><p>Pablo Lunt</p></strong>
+                        <p class="position">Operations Manager</p>
+                        <p>(+502) 2156-7800, ext. 437</p>
+                    </section>
+                </div>
+            </div>
+            <form id="contactForm" action="thankyou.html" method="get">   
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label class="formInfo">Name* <input type="text" name="fname" required></label>
+                <label class="formInfo">Email* <input type="email" name="email" placeholder="pointofthemayans@chamberofcommerce.com" required></label>
+                <label class="formInfo">Business Name <input type="text" name="businessName"></label>
+                <label class="MembershipQuestion">Are you a Chamber Member?*
+                <label class="formMembership"><input type="radio" name="membership" value="non-profit" required>Yes</label>
+                <label class="formMembership"><input type="radio" name="membership" value="bronze" required>No</label>
+                <label class="formMembership"><input type="radio" name="membership" value="silver" required>Not sure</label>
+                </label>
+            </fieldset>
+            <section class="contactSection">
+                <label class="businessInfo">Questions/Concerns*<textarea class="textbox" name="tbox" cols="6" rows="5" required></textarea></label>
+            </section>
+            <label class="submitBtnContainer"><input type="submit" value="Contact the Chamber" class="submitBtn"></label>
+        </form>
+    </div>
     </main>
     <!-- FOOTER HERE -->
     <footer>
@@ -129,7 +170,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/directory.js"></script>
 </body>
 
 </html>

@@ -33,7 +33,7 @@ document.getElementById("lstmoddate").textContent = document.lastModified;
 document.getElementById("currentYear").textContent = year;
 document.getElementById("todaysDate").textContent = fulldate
 
-//This shows the banner on Monday and Tuesday
+/*This shows the banner on Monday and Tuesday
 let z = new Date().getDay();
 
 const banner = document.getElementById("banner");
@@ -45,6 +45,7 @@ const close = document.querySelector("#close");
 close.addEventListener("click", () => {
     banner.style.display = "none";
 });
+*/
 
 //Dynamic Nav
 function toggleMenu() {

@@ -776,3 +776,21 @@ div#viewButtons {
 .infoCards-list img, .email, .membership {
     display: none;
 }
+.placeholder-title {
+    padding: 0.6rem;
+}
+.placeholder {
+    border: solid 1px #10354B;
+    margin: 0.5rem;
+}
+.section-text {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+div#visitAndPoints {
+    display: flex;
+    flex-direction: column;
+}
+#contactTitle, h2.placeholder-title {
+    text-align: center;
+ }
