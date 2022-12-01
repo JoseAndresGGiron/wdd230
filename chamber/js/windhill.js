@@ -24,7 +24,7 @@ function windChill(temp, speed) {
 */
 const weatherAPI = "1c73d079411018bb31aa6c57e4ae946d";
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?id=Guatemala&units=imperial&lat=&lon=&appid=${weatherAPI}`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?id=${3598132}&units=imperial&lat=&lon=&appid=${weatherAPI}`)
     .then((response) => response.json())
     .then((data) => {
 
