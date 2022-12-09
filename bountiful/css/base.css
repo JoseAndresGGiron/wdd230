@@ -1,0 +1,227 @@
+:root {
+    --color1: #fffffe;
+    --color2: #f3b700;
+    --color3: #1b2d45;
+    --color4: #008938;
+    --color5: #fffffe;
+    --color6: #f582ae;
+}
+
+body {
+    max-width: 1280px;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#banner {
+    display: none;
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    background-color: #f9e45b;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    align-items: center;
+    /*border-style: ridge;*/
+}
+
+.logos {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.container-logo {
+    height: 100px;
+    width: fit-content;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: var(--color3);
+    color: #fff;
+    box-shadow: 0 0 5px #333;
+}
+
+header {
+    display: grid;
+    
+}
+#social{
+    display: flex;
+    justify-content: space-around;
+}
+#top-heading {
+    justify-self: start;
+    margin-top: 0.5rem;
+    margin-left: 0.7rem;
+    padding-left: 15px;
+}
+
+#top-heading h1 {
+    margin-bottom: 5px;
+}
+
+#top-heading h2 {
+    margin: 0;
+}
+
+
+p {
+    padding: .5rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-family: 'Arvo', serif;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #084998;
+}
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+a#join-us {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: var(--color3);
+}
+button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #bae8e8;
+    justify-self: center;
+}
+
+nav {
+    background-color: var(--color3);
+    grid-column: 1/4;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #fffffe;
+    border-top: 1px solid rgba(0, 0, 0, 5);
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+/*This displays the hamburger icon and hides the X icon*/
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+/*This displays the X icon and hides the hamburger icon*/
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+
+}
+
+/*Main Style*/
+#mainIndex {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    align-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+/*Footer Style*/
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+footer a {
+    color: antiquewhite;
+}
+
+#p-footer {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+footer p {
+    margin: 0;
+}
+
+

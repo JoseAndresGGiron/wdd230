@@ -28,10 +28,10 @@
     <!--last visit
     I changed it to display none since deleting it will affect my JS-->
     <div id="banner" style="display: none;">
-        
+
         <button id="close">❌</button>
     </div>
-    
+
 
     <!-- HEADER HERE -->
     <header>
@@ -45,9 +45,8 @@
 
         <div id="social">
 
-            <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32"
-                width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" viewBox="0 0 32 32" width="32px"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                     <circle clip-rule="evenodd" cx="16" cy="16" fill="#3B5998" fill-rule="evenodd" r="16" />
                     <path
@@ -62,9 +61,8 @@
                 <g />
             </svg>
 
-            <svg enable-background="new 0 0 32 32" height="32px" id="Layer_2" version="1.0" viewBox="0 0 32 32"
-                width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg enable-background="new 0 0 32 32" height="32px" id="Layer_2" viewBox="0 0 32 32" width="32px"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                     <circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16" />
                     <g>
@@ -99,7 +97,7 @@
     <!-- CONTENT HERE -->
     <main id="joinMain">
         <div id="joinTitle">
-            <h1>Join the Chamber</h1>
+            <h2>Join the Chamber</h2>
         </div>
         <div id="joinBody">
             <div>
@@ -108,68 +106,81 @@
                     <section class="membershipPlans">
                         <h3>Gold Membership 🥇</h3>
                         <p class="membershipFee">$1,000 / yr.</p>
-                        <p class="membershipDescription">For businesses looking to maximize their benefits with enhanced visibility and attention.</p>
+                        <p class="membershipDescription">For businesses looking to maximize their benefits with enhanced
+                            visibility and attention.</p>
                         <ul class="benefits">
                             <li class="perks">Premiere advertising on Point of The Mayans Chamber of Commerce</li>
                             <li class="perks">50% off Exhibit Booth at town events</li>
                             <li class="perks">Participation in Chamber Board Meeting</li>
-                          </ul>
+                        </ul>
                     </section>
                     <section class="membershipPlans">
                         <h3>Silver Membership 🥈</h3>
                         <p class="membershipFee">$500 / yr.</p>
-                        <p class="membershipDescription">For growing businesses looking to build customer awareness with marketing exposure</p>
+                        <p class="membershipDescription">For growing businesses looking to build customer awareness with
+                            marketing exposure</p>
                         <ul class="benefits">
                             <li class="perks">Featured advertising on Point of The Mayans Chamber of Commerce</li>
                             <li class="perks">30% off Exhibit Booth at town events</li>
                             <li class="perks">Free yearly leadership seminar</li>
-                          </ul>
+                        </ul>
                     </section>
                     <section class="membershipPlans">
                         <h3>Bronze Membership 🥉</h3>
                         <p class="membershipFee">$300 / yr.</p>
-                        <p class="membershipDescription">For small businesses looking to establish their business profile and get meaningfully connected with the community</p>
+                        <p class="membershipDescription">For small businesses looking to establish their business
+                            profile and get meaningfully connected with the community</p>
                         <ul class="benefits">
                             <li class="perks">Searchable through Point of The Mayans Chamber of Commerce</li>
                             <li class="perks">Notifications of Community Events</li>
-                          </ul>
+                        </ul>
                     </section>
                     <section class="membershipPlans">
                         <h3>Non-Profit Membership 🏅</h3>
                         <p class="membershipFee">Free</p>
-                        <p class="membershipDescription">For Non-Profit organizations looking to serve local communities.</p>
+                        <p class="membershipDescription">For Non-Profit organizations looking to serve local
+                            communities.</p>
                         <ul class="benefits">
                             <li class="perks">Notifications of Community Events</li>
                             <li class="perks">Exhibit Booth at town events</li>
-                          </ul>
+                        </ul>
                     </section>
                 </div>
             </div>
-            
-        <form id="joinForm" action="thankyou.html" method="get">   
-            <fieldset>
-                <legend>Your Information</legend>
-                <label class="formInfo">First Name* <input type="text" name="fname" required></label>
-                <label class="formInfo">Last Name* <input type="text" name="lname" required></label>
-                <label class="formInfo">Business Position Title <input type="text" name="businessPosition"></label>
-                <label class="formInfo">Email* <input type="email" name="email" placeholder="pointofthemayans@chamberofcommerce.com" required></label>
-                <label class="formInfo">Phone* <input type="tel" name="phone" placeholder="1230006280" required></label>
-                <label class="formInfo">Business Name* <input type="text" name="businessName" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Plans</legend>
-                <label class="formMembership mem1"><input type="radio" name="membership" value="non-profit" required>Non-Profit Membership</label>
-                <label class="formMembership mem1"><input type="radio" name="membership" value="bronze" required>Bronze Membership</label>
-                <label class="formMembership mem1"><input type="radio" name="membership" value="silver" required>Silver Membership</label>
-                <label class="formMembership mem1"><input type="radio" name="membership" value="gold" required>Gold Membership</label>
-                <div class="formInfo">*Memberships have increasing costs as well as increased benefits per level like trainings, event discounts, etc.</div>
-            </fieldset>
-                <label class="businessInfo">Tell Us About Your Business<textarea class="textbox" name="tbox" cols="6" rows="5"></textarea></label>
+
+            <form id="joinForm" action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label class="formInfo">First Name* <input type="text" name="fname" required></label>
+                    <label class="formInfo">Last Name* <input type="text" name="lname" required></label>
+                    <label class="formInfo">Business Position Title <input type="text" name="businessPosition"></label>
+                    <label class="formInfo">Email* <input type="email" name="email"
+                            placeholder="pointofthemayans@chamberofcommerce.com" required></label>
+                    <label class="formInfo">Phone* <input type="tel" name="phone" placeholder="1230006280"
+                            required></label>
+                    <label class="formInfo">Business Name* <input type="text" name="businessName" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Plans</legend>
+                    <label class="formMembership mem1"><input type="radio" name="membership" value="non-profit"
+                            required>Non-Profit Membership</label>
+                    <label class="formMembership mem1"><input type="radio" name="membership" value="bronze"
+                            required>Bronze Membership</label>
+                    <label class="formMembership mem1"><input type="radio" name="membership" value="silver"
+                            required>Silver Membership</label>
+                    <label class="formMembership mem1"><input type="radio" name="membership" value="gold" required>Gold
+                        Membership</label>
+                    <div class="formInfo">*Memberships have increasing costs as well as increased benefits per level
+                        like trainings, event discounts, etc.</div>
+                </fieldset>
+                <label class="businessInfo">Tell Us About Your Business<textarea class="textbox" name="tbox" cols="6"
+                        rows="5"></textarea></label>
                 <!--A hidden field that contains the current date and time that the form was loaded by the user.-->
                 <input type="hidden" name="date" value="CurrentTime">
                 <input type="hidden" name="time" value="CurrentDate">
-            <label class="submitBtnContainer"><input class="submitBtn" type="submit" value="Join the Chamber"></label>
-        </form>
+                <label class="submitBtnContainer"><input class="submitBtn" type="submit"
+                        value="Join the Chamber"></label>
+            </form>
         </div>
     </main>
     <!-- FOOTER HERE -->
@@ -193,7 +204,7 @@
             <br>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

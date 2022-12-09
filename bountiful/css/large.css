@@ -1,0 +1,59 @@
+/*64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    :root {
+        --color1: #fffffe;
+        --color2: #f3b700;
+        --color3: #1b2d45;
+        --color4: #008938;
+        --color5: #fffffe;
+        --color6: #f582ae;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    header button {
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    div#social {
+        grid-column: 3;
+    }
+    /*header{
+        grid-row: 2;
+    }*/
+    nav {
+        grid-column: 2;
+        grid-row: 1;
+        width: auto;
+        border: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav ul li a {
+        padding: .5rem 1rem;
+        border: none;
+    }
+
+    nav ul li a:hover {
+        border-radius: 20%;
+    }
+
+    nav ul li.active a {
+        border-radius: 20%;
+    }
+
+    
+
+
+}
+
+/* end large */
