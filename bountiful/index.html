@@ -58,7 +58,7 @@
         <nav>
             <ul id="primaryNav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="fresh.html">fresh</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
@@ -73,7 +73,7 @@
                 <h2>Current Weather</h2>
                 <figure id="weatherFigure">
                     <img src="" alt="" id="weatherIcon">
-                    <p><strong><span id="currentTemperature"></span>&deg;C</strong></p>
+                    <p><strong><span id="currentTemperature"></span>&deg;F</strong></p>
                 </figure>
                 <figcaption id="weatherDescription"></figcaption>
                 <p><strong>Humidity: <span id="currentHumidity"></span>%</strong></p>
@@ -115,37 +115,39 @@
         </div>
 
         <!-- Three Day Forecast -->
-        <div id="threeDaysForecast">
+        <div id="forecast">
             <h2>Three Days Forecast</h2>
-            <section class="days">
-                <h3 id="day1"></h3>
-                <figure>
-                    <img src="" alt="" id="weatherIcon1">
-                </figure>
-                <p id="weatherDescription1"></p>
-                <p class="temperatures">Max <span id="lowest1"></span>&deg;C <span
-                        class="temperatureDivision">.:|:.</span> Min <span id="highest1"></span>&deg;C</p>
-            </section>
-            <section class="days">
-                <h3 id="day2"></h3>
-                <figure>
-                    <img src="" alt="" id="weatherIcon2">
-                </figure>
-                <p id="weatherDescription2"></p>
-                <p class="temperatures">Max <span id="lowest2"></span>&deg;C <span
-                        class="temperatureDivision">.:|:.</span> Min <span id="highest2"></span>&deg;C</p>
-            </section>
-            <section class="days">
-                <h3 id="day3"></h3>
-                <figure>
-                    <img src="" alt="" id="weatherIcon3">
-                </figure>
-                <p id="weatherDescription3"></p>
-                <p class="temperatures">Max <span id="lowest3"></span>&deg;C <span
-                        class="temperatureDivision">.:|:.</span> Min <span id="highest3"></span>&deg;C</p>
-            </section>
-        </div>
+            <div id="threeDaysForecast">
 
+                <section class="days">
+                    <h3 id="day1"></h3>
+                    <figure>
+                        <img src="" alt="" id="weatherIcon1">
+                    </figure>
+                    <p id="weatherDescription1"></p>
+                    <p class="temperatures">Max <span id="lowest1"></span>&deg;F <span
+                            class="temperatureDivision">.:|:.</span> Min <span id="highest1"></span>&deg;F</p>
+                </section>
+                <section class="days">
+                    <h3 id="day2"></h3>
+                    <figure>
+                        <img src="" alt="" id="weatherIcon2">
+                    </figure>
+                    <p id="weatherDescription2"></p>
+                    <p class="temperatures">Max <span id="lowest2"></span>&deg;F <span
+                            class="temperatureDivision">.:|:.</span> Min <span id="highest2"></span>&deg;F</p>
+                </section>
+                <section class="days">
+                    <h3 id="day3"></h3>
+                    <figure>
+                        <img src="" alt="" id="weatherIcon3">
+                    </figure>
+                    <p id="weatherDescription3"></p>
+                    <p class="temperatures">Max <span id="lowest3"></span>&deg;F <span
+                            class="temperatureDivision">.:|:.</span> Min <span id="highest3"></span>&deg;F</p>
+                </section>
+            </div>
+        </div>
     </main>
     <!-- FOOTER HERE -->
     <footer>
@@ -164,7 +166,8 @@
         </div>
     </footer>
     <script src="script/nav.js"></script>
-    <script src="weather/nav.js"></script>
+    <script src="script/weather.js"></script>
+    <script src="script/lastmodi.js"></script>
     <!--<script src="script/lazyload.js"></script>-->
 </body>
 

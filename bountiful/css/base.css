@@ -196,9 +196,25 @@ nav ul.open {
     margin-top: 10px;
 }
 
+/*Images*/
+#templeSection picture img {
+    width: 100%;
+    height: 335px;
+}
 
+.templeCover {
+    object-fit: cover;
+    border-radius: 10px;
+}
 
+/*Three Day Forecast*/
+#threeDaysForecast{
+    display: flex;
+}
 
+div#forecast{
+    text-align: center;
+}
 
 /*Footer Style*/
 footer {

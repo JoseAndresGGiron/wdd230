@@ -37,17 +37,20 @@
         <div class="container-logo">
             <img class="logos" id="top" src="images/logo/logotop.png" alt="Logo">
         </div>
-        
+
         <!-- SOCIAL MEDIA LOGOS LINKS-->
         <div id="social">
             <picture class="socialMediaIcons">
-                <a href="http://facebook.com" target="_blank"><img src="images/socialmedia/facebook.png" alt="Facebook Logo"></a>
+                <a href="http://facebook.com" target="_blank"><img src="images/socialmedia/facebook.png"
+                        alt="Facebook Logo"></a>
             </picture>
             <picture class="socialMediaIcons">
-                <a href="http://twitter.com" target="_blank"><img src="images/socialmedia/twitter.png" alt="twitter Logo"></a>
+                <a href="http://twitter.com" target="_blank"><img src="images/socialmedia/twitter.png"
+                        alt="twitter Logo"></a>
             </picture>
             <picture class="socialMediaIcons">
-                <a href="http://instagram.com" target="_blank"><img src="images/socialmedia/instagram.png" alt="Instagram Logo"></a>
+                <a href="http://instagram.com" target="_blank"><img src="images/socialmedia/instagram.png"
+                        alt="Instagram Logo"></a>
             </picture>
         </div>
         <!-- NAVIGATION HERE -->
@@ -61,9 +64,29 @@
         </nav>
     </header>
     <!-- CONTENT HERE -->
-    <main id="">
-        <h2>Hello</h2>
-       
+    <main id="mainFresh">
+        <form class="fruitForm">
+            <fieldset class="">
+                <p>First Name <span class="redColor">*</span></p>
+                <label class=""><input type="text" name="fname" required></label>
+                <p>Last Name <span class="redColor">*</span></p>
+                <label class=""><input type="text" name="lname" required></label>
+                <p>Email <span class="redColor">*</span></p>
+                <label class=""><input type="email" name="email" required></label>
+                <label class="formInfo">Phone* <input type="tel" name="phone" placeholder="1230006280"
+                        required=""></label>
+            </fieldset>
+            <fieldset class="fruitSelect">
+                <p>Choose Three Fruits <span class="redColor">*</span></p>
+
+            </fieldset>
+            <fieldset class="instructions">
+                <p>Extra Instructions <span class="redColor">*</span></p>
+                <label class=""><textarea name="extraInfo"></textarea></label>
+            </fieldset>
+        </form>
+        <input type="submit" value="Get Drink" class="fruitBtn">
+        <p>Output</p>
     </main>
     <!-- FOOTER HERE -->
     <footer>
@@ -82,7 +105,7 @@
         </div>
     </footer>
     <script src="script/nav.js"></script>
-<!--<script src="script/lazyload.js"></script>-->
+    <!--<script src="script/lazyload.js"></script>-->
 </body>
 
 </html>
