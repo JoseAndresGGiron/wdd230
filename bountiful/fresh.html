@@ -3,17 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Home Page">
+    <meta name="description" content="Fresh Page">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods | Home Page</title>
+    <title>Bountiful Foods | Fresh Page</title>
     <!--Favicon Icon-->
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@300&family=Libre+Baskerville&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fragment+Mono&family=Solway:wght@500&display=swap"
         rel="stylesheet">
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -26,16 +25,11 @@
 </head>
 
 <body>
-    <!--last visit-->
-    <div id="banner" style="display: none;">
-
-        <button id="close">❌</button>
-    </div>
 
     <!-- HEADER HERE -->
     <header>
         <div class="container-logo">
-            <img class="logos" id="top" src="images/logo/logotop.png" alt="Logo">
+            <img class="logos" id="top" src="images/logo/logotop2.webp" alt="Logo">
         </div>
 
         <!-- SOCIAL MEDIA LOGOS LINKS-->
@@ -57,45 +51,73 @@
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <nav>
             <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="fresh.html">fresh</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="fresh.html">fresh</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
     <!-- CONTENT HERE -->
-    <main id="mainFresh">
-        <form class="fruitForm">
-            <fieldset class="">
-                <p>First Name <span class="redColor">*</span></p>
-                <label class=""><input type="text" name="fname" required></label>
-                <p>Last Name <span class="redColor">*</span></p>
-                <label class=""><input type="text" name="lname" required></label>
-                <p>Email <span class="redColor">*</span></p>
-                <label class=""><input type="email" name="email" required></label>
-                <label class="formInfo">Phone* <input type="tel" name="phone" placeholder="1230006280"
-                        required=""></label>
-            </fieldset>
-            <fieldset class="fruitSelect">
-                <p>Choose Three Fruits <span class="redColor">*</span></p>
+    <main id="">
+        <h1>Build your own specialty drink!</h1>
+        <h2>Our ingredients are the freshest in the market. Use the form below to <strong>order your own smoothie
+                receipte</strong> </h2>
+        <form name="freshForm">
 
+            <fieldset class="topForm">
+                <legend>Your Information</legend>
+                <label class="personalInfoLabel">
+                    <span>First Name*</span>
+                    <input type="text" name="fname" id="form_first" autofocus required>
+                </label>
+                <label class="personalInfoLabel">
+                    <span>Email*</span>
+                    <input type="email" name="email" id="form_email" placeholder="info@bountifulfoods.com" required>
+                </label>
+                <label class="personalInfoLabel">
+                    <span>Phone*</span>
+                    <input type="tel" name="phone" id="form_phone" placeholder="1230006280" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="fruitSelect">
+                <legend>Select Three Fruits*</legend>
+                <label class="top">
+                    <span>Fruit #1</span>
+                    <select name="fruit_one" class="dropdowns" id="fruta1"></select>
+                </label>
+                <label class="top">
+                    <span>Fruit #2</span>
+                    <select name="fruit_two" class="dropdowns" id="fruta2"></select>
+                </label>
+                <label class="top">
+                    <span>Fruit #3</span>
+                    <select name="fruit_three" class="dropdowns" id="fruta3"></select>
+                </label>
             </fieldset>
             <fieldset class="instructions">
-                <p>Extra Instructions <span class="redColor">*</span></p>
-                <label class=""><textarea name="extraInfo"></textarea></label>
+                <legend>Anything else?</legend>
+                <label class="top">
+                    <textarea name="description" id="form_special" rows="5"
+                        placeholder="Special Instructions go here"></textarea>
+                </label>
             </fieldset>
+            <button type="button" id="submitBtn">Create Smoothie!</button>
         </form>
-        <input type="submit" value="Get Drink" class="fruitBtn">
-        <p>Output</p>
+        </div>
+        <div class="output_smoothie">
+            <p id="new_drink"></p>
+        </div>
+    </main>
     </main>
     <!-- FOOTER HERE -->
     <footer>
-        <div class="container-logo">
-            <img class="logos" src="images/logo/logotop.png" alt="Logo">
+        <div class="container-logo" id="footerLogoBox">
+            <img class="logos" src="images/logo/logotop2.webp" alt="Logo">
         </div>
         <div id="address">
             <p>123 Mapple St<br>Carlsbad, California</p>
-            <a href="attribution.html" target="_blank">Attribution Page &amp; External Links</a>
+            <a href="atribution.html" target="_blank">Attribution Page &amp; External Links</a>
             <p>Last Updated: <span id="lstmoddate"></span></p>
         </div>
         <div id="info">
@@ -105,6 +127,9 @@
         </div>
     </footer>
     <script src="script/nav.js"></script>
+    <script src="script/lastmodi.js"></script>
+    <script src="script/fresh.js"></script>
+    <script src="script/lazyload.js"></script>
     <!--<script src="script/lazyload.js"></script>-->
 </body>
 

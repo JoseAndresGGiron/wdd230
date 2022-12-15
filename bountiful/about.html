@@ -3,17 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Home Page">
+    <meta name="description" content="About Us Page">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods | Home Page</title>
+    <title>Bountiful Foods | About Us Page</title>
     <!--Favicon Icon-->
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@300&family=Libre+Baskerville&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fragment+Mono&family=Solway:wght@500&display=swap"
         rel="stylesheet">
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -26,53 +25,86 @@
 </head>
 
 <body>
-    <!--last visit-->
-    <div id="banner" style="display: none;">
-
-        <button id="close">❌</button>
-    </div>
-
     <!-- HEADER HERE -->
     <header>
         <div class="container-logo">
-            <img class="logos" id="top" src="images/logo/logotop.png" alt="Logo">
+            <img class="logos" id="top" src="images/logo/logotop2.webp" alt="Logo">
         </div>
-        
+
         <!-- SOCIAL MEDIA LOGOS LINKS-->
         <div id="social">
             <picture class="socialMediaIcons">
-                <a href="http://facebook.com" target="_blank"><img src="images/socialmedia/facebook.png" alt="Facebook Logo"></a>
+                <a href="http://facebook.com" target="_blank"><img src="images/socialmedia/facebook.png"
+                        alt="Facebook Logo"></a>
             </picture>
             <picture class="socialMediaIcons">
-                <a href="http://twitter.com" target="_blank"><img src="images/socialmedia/twitter.png" alt="twitter Logo"></a>
+                <a href="http://twitter.com" target="_blank"><img src="images/socialmedia/twitter.png"
+                        alt="twitter Logo"></a>
             </picture>
             <picture class="socialMediaIcons">
-                <a href="http://instagram.com" target="_blank"><img src="images/socialmedia/instagram.png" alt="Instagram Logo"></a>
+                <a href="http://instagram.com" target="_blank"><img src="images/socialmedia/instagram.png"
+                        alt="Instagram Logo"></a>
             </picture>
         </div>
         <!-- NAVIGATION HERE -->
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <nav>
             <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">fresh</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li class="active"><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
     <!-- CONTENT HERE -->
-    <main id="">
-        <h2>Hello</h2>
-       
+    <main id="mainAbout">
+        <h1> About Us!</h1>
+        <section>
+            <h2>Did you know?</h2>
+            <p>Founder Jose Andres Giron opened Bountiful Foods due to his desire to provide fresh, nutritious food
+                options to all who
+                visit Carlsbad. He was inspired by her grandmother who, despite being 98 years old, maintains an
+                incredible lifestyle thanks to her nutritional care. In a world surrounded by fast and greasy food, it
+                is important to find a means by which you can take care of your quality of life by watching what you
+                eat. <strong>"Those who think they don't have time for healthy eating sooner or later will find time for
+                    illness"</strong><br><br>Don't worry anymore! Come and enjoy delicious and fresh food only at Bountifoul
+                Foods!</p>
+        </section>
+        <section id="contactUs">
+            <h2>Contact Us!</h2>
+            <div id="contactUsBox">
+                <div>
+                    <h3>Address</h3>
+                    <p>123 Mapple St<br>Carlsbad, California</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>info@bountifulfoods.com</p>
+                </div>
+                <div>
+                    <h3>Phone#</h3>
+                    <p>+1 818-502-503</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Where are we located?</h2>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ehbc=2E312F"
+                    width="600px" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>></iframe>
+            </div>
+        </section>
+
     </main>
     <!-- FOOTER HERE -->
     <footer>
-        <div class="container-logo">
-            <img class="logos" src="images/logo/logotop.png" alt="Logo">
+        <div class="container-logo" id="footerLogoBox">
+            <img class="logos" src="images/logo/logotop2.webp" alt="Logo">
         </div>
         <div id="address">
             <p>123 Mapple St<br>Carlsbad, California</p>
-            <a href="attribution.html" target="_blank">Attribution Page &amp; External Links</a>
+            <a href="atribution.html" target="_blank">Attribution Page &amp; External Links</a>
             <p>Last Updated: <span id="lstmoddate"></span></p>
         </div>
         <div id="info">
@@ -82,7 +114,8 @@
         </div>
     </footer>
     <script src="script/nav.js"></script>
-<!--<script src="script/lazyload.js"></script>-->
+    <script src="script/lastmodi.js"></script>
+    <!--<script src="script/lazyload.js"></script>-->
 </body>
 
 </html>

@@ -43,10 +43,11 @@ footer {
 }
 
 .container-logo {
-    height: 100px;
     width: fit-content;
 }
-
+.container-logo#footerLogoBox {
+    height: 100px;
+}
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box;
@@ -63,60 +64,63 @@ footer {
 
 header {
     display: grid;
-    
+    grid-template-rows: 1fr;
+    min-height: 8rem;
 }
-#social{
+
+#social {
     display: flex;
     justify-content: space-around;
 }
+
 #top-heading {
     justify-self: start;
     margin-top: 0.5rem;
     margin-left: 0.7rem;
     padding-left: 15px;
 }
-
-#top-heading h1 {
-    margin-bottom: 5px;
-}
-
-#top-heading h2 {
-    margin: 0;
-}
-
-
-p {
+p, span {
     padding: .5rem;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 1rem;
+    color: var( --color3);
 }
 
 h1 {
-    font-size: 1.3rem;
-    font-family: 'Arvo', serif;
+    font-size: 1.6rem;
+    font-family: 'Fragment Mono', monospace;
+    color: var( --color2);
+    text-shadow: 1px 1px 1px var(--color2);
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
+    font-family: 'Solway', serif;
+    font-size: 1.3rem;
+    margin: 1rem;
+    text-align: center;
 }
-h3{
-    font-family: 'Josefin Sans', sans-serif;;
+
+h3 {
+    font-family: 'Solway', serif;
     font-weight: 900;
-    font-size: 1.6rem;
-    color: #084998;
+    font-size: 1rem;
+    color: var(--color6);
 }
+
 h4 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: bolder;
 }
+
 a#join-us {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;
     font-size: 1.6rem;
     color: var(--color3);
 }
+
 button {
     margin: .2rem 2vw;
     background-color: transparent;
@@ -167,7 +171,10 @@ nav ul {
 nav ul.open {
     display: block;
 }
-
+#hamburgerBtn span {
+    color: var(--color1);
+    font-size: 2rem;
+}
 /*This displays the hamburger icon and hides the X icon*/
 #hamburgerBtn span:nth-child(1) {
     display: block;
@@ -187,6 +194,19 @@ nav ul.open {
 
 }
 
+/* **********  HOME PAGE ********** */
+.mainContent {
+    border-style: ridge;
+    margin: 7px;
+    text-align: center;
+}
+
+/*Box Shadow*/
+div#drinksContainer {
+    box-shadow: 0 0 5px #333;
+    padding: 0.5rem;
+}
+
 /*Main Style*/
 #mainIndex {
     display: flex;
@@ -194,28 +214,82 @@ nav ul.open {
     font-size: 1em;
     align-content: center;
     margin-top: 10px;
+    row-gap: 0.5rem;
 }
 
-/*Images*/
-#templeSection picture img {
-    width: 100%;
-    height: 335px;
-}
-
-.templeCover {
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/*Three Day Forecast*/
-#threeDaysForecast{
-    display: flex;
-}
-
-div#forecast{
+/*Current Weather and Number os Specialty Drinks Container*/
+section#weatherBox {
+    display: grid;
+    align-items: center;
     text-align: center;
 }
 
+/*Current Weather*/
+div#currentWeather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px #333;
+    padding: 0.5rem;
+    margin: 0.8rem 0;
+}
+
+/*Hero Quote*/
+div#hero-img{
+    position: relative;
+}
+div#heroQuote {
+    text-align: center;
+    position: absolute;
+    background-color: var(--color6);
+    top: 65.3%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 45%;
+    right: 0;
+    /*padding: 1rem 0.8rem;*/
+    font-weight: 600;
+    line-height: 2;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: var(--color5);
+    box-shadow: 5px 10px 18px var(--color1);
+    opacity: 0.9;
+}
+
+div#heroQuote a {
+    padding: 0;
+    color: var(--color5);
+}
+
+/*Images*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.drinksCover {
+    border-radius: 0.5rem;
+}
+.beachImg {
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+/*Three Day Forecast*/
+
+div#forecast {
+    text-align: center;
+}
+
+div#textInfo p {
+    line-height: 1.8;
+}
+section.days {
+    box-shadow: 0 0 5px #333;
+    padding-top: 0.1rem;
+    margin: 0.2rem;
+}
 /*Footer Style*/
 footer {
     margin-top: 10px;
@@ -225,19 +299,162 @@ footer {
     flex-direction: column;
     text-align: center;
     padding-top: 1rem;
+    min-height: 8rem;
 }
 
 
 footer a {
     color: antiquewhite;
 }
+footer p, footer span {
+    color: var(--color1);
+}
 
 #p-footer {
     border-top: 1px solid rgb(255, 255, 255);
 }
 
-footer p {
-    margin: 0;
+
+
+/*Fresh Page*/
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+label{
+    padding: 0.5%;
+}
+input {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    border: 1px solid #08232B;
+    border-radius: 4px;
+    padding: .75rem;
+    background-color: #F6FAFE;
+    text-align: left;
 }
 
 
+legend {
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+fieldset.fruitSelect {
+    display: flex;
+    flex-direction: column;
+}
+fieldset.fruitSelect label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    /* align-items: center; */
+}
+fieldset.topForm {
+    display: flex;
+    flex-direction: column;
+}
+input:required:invalid {
+    border-left: 6px solid red;
+}
+input:required:valid {
+    border-left: 6px solid var(--color4);
+}
+
+
+form label.personalInfoLabel {
+    display: flex;
+    color: var(--color3);
+    text-align: left;
+    padding: .5rem 1rem 1.5rem 1rem;
+    max-width: 30rem;
+    flex-direction: column;
+}
+#submitBtn {
+    background-color: var(--color4);
+    color: var(--color1);
+    border-radius: 0.5rem;
+    padding: .75rem 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 0.5rem auto;
+    box-shadow: 0 0 5px #333;
+    width: 50%;
+}
+textarea#form_special {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.output_smoothie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    box-shadow: 10px 10px 20px grey;
+    margin: auto;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+thead tr:nth-child(odd) th {
+    background-color: rgb(71, 151, 182);
+    font-size: 2em;
+}
+
+thead tr:nth-child(even) th {
+    background-color: rgb(23, 53, 117);
+    color: #fff;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(183, 213, 252);
+}
+
+tr:nth-child(odd) td {
+    background-color: rgba(158, 188, 226, 0.87);
+}
+
+tbody tr:nth-child(2) td:nth-child(2) {
+    background-color: rgb(23, 53, 117);
+    color: #fff;
+}
+
+caption {
+    padding: 0.7rem;
+    caption-side: top;
+}
+/*ABOUT US */
+section#contactUs {
+    text-align: center;
+}
+div#contactUsBox {
+    display: flex;
+    flex-direction: column;
+}
+main#mainAbout h2 {
+    text-align: left;
+}
+
+#map iframe {
+    /* height: 100%; */
+    width: 100%;
+}

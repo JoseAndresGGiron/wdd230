@@ -1,7 +1,7 @@
 /* ===== Weather =====*/
 const weatherAPI = "1c73d079411018bb31aa6c57e4ae946d";
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA,USA&units=imperial&appid=${weatherAPI}`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA,US&units=imperial&appid=${weatherAPI}`)
     .then((weatherURL) => weatherURL.json())
     .then((data) => {
 
@@ -18,7 +18,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA,USA&units=i
     });
 
 /* ===== Three-days Forecast =====*/
-fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad,CA,USA&units=imperial&appid=${weatherAPI}`)
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad,CA,US&units=imperial&appid=${weatherAPI}`)
     .then((weatherURL) => weatherURL.json())    
     .then((data) => {
 
